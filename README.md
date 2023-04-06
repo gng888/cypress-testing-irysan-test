@@ -1,6 +1,7 @@
 # Cypress Cucumber Test Framework
 
 The test framework consists of Cypress and Cucumber with Typescript
+The test make use of Scenario Outline and Examples Data Table to execute multiple scenarios in the feature file
 
 ## Pre-requisistes
 
@@ -14,13 +15,17 @@ The test framework consists of Cypress and Cucumber with Typescript
 You must install dependencies prior to running your tests using the following command
 `npm install`
 
-## Runming the tests
+## Running the Cypress Tests
 
-Run tests using cypress runner
+Run Tests using cypress runner
 `npm run cypress:runner`
 
-Run tests in headless mode
+Run Tests in headless mode
 `npm run cypress:headless`
 
 Generate Cucumber Reports
 `npm run cypress:report`
+
+Library Usage:
+[Cucumber](https://cucumber.io/docs/) 
+[Cypress](https://www.cypress.io/)
