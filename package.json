@@ -1,0 +1,28 @@
+{
+  "name": "cypress-testing-exercise-cucumber-ts-framework",
+  "version": "1.0.0",
+  "description": "Cypress Cucumber with Typescript framework",
+  "scripts": {
+    "cypress:headless": "cypress run",
+    "cypress:runner": "cypress open",
+    "cypress:report": "node generate-report.ts"
+  },
+  "author": "Gabriel Ng",
+  "license": "Cypress Cucumber Test Exercise",
+  "dependencies": {
+    "cypress": "^12.4.1",
+    "typescript": "^4.4.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "devDependencies": {
+    "multiple-cucumber-html-reporter": "^3.3.0"
+  }
+}
